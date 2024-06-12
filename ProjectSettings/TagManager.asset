@@ -9,6 +9,7 @@ TagManager:
   - AR Session Origin
   - DartThrowPoint
   - ScoreValue
+  - Score
   layers:
   - Default
   - TransparentFX

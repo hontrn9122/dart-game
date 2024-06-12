@@ -7,14 +7,13 @@ using System;
 
 public class UpdateScore : MonoBehaviour
 {
-
-    private TMP_Text currentScore = GameObject.FindGameObjectWithTag("ScoreValue").GetComponent<TextMeshProUGUI>();
     public int score;
+    private Score currentScore;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        currentScore = GameObject.FindWithTag("Score").GetComponent<Score>();
     }
 
     // Update is called once per frame
@@ -25,10 +24,9 @@ public class UpdateScore : MonoBehaviour
 
     private void OnTriggerEnter(Collider dart)
     {
-        if (dart.CompareTag("dart"))
-        {
-            currentScore.text = (Convert.ToInt32(currentScore.text) + score).ToString();
-        }
-        
+        //if (dart.CompareTag("dart"))
+        //{
+            currentScore.addScore(score);
+        //}
     }
 }
