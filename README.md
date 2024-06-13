@@ -1,7 +1,7 @@
 # AR Dart Game using Unity
 
 ## Description
-This repo contains the code for the AR Dart Game, which is the assigment work for our Game Programming class, using Unity and C#.
+This repo contains the code for the AR Dart Game, which is the assignment work for our Game Programming class, using Unity and C#. Our game can detect the wall and allow the player to place the dartboard on the wall. The player then can throw darts and the scores are recorded.
 
 ## Dependencies
 
